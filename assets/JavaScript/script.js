@@ -29,7 +29,7 @@ function updateCal(date) {
     let mm = updateDate.getMonth();
     let day = [];
 
-    //Change title
+    //Update title
     title.innerHTML = `<h1>${months[mm][0]} ${yy}`;
 
     //Checks for leap year and changes days in Feb accordingly

@@ -247,3 +247,17 @@ body {
     justify-items: center;
     position: relative;
 }
+
+.date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    aspect-ratio: 1 / 1;
+}
+
+.active {
+    background-color: var(--accent);
+    border-radius: 50%;
+    color: black;
+}

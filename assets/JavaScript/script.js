@@ -46,7 +46,6 @@ function updateCal(date) {
     for (let i = 0; i < firstDay.getDay(); i++) {
         day.unshift(`<div class="date not-this-month">${lastMMDay - i}</div>`);
     }
-    monthDays.innerHTML = day.join('');
 
     //Adding the days of the current month
     for (let i = 1; i <= months[mm][1]; i++) {
@@ -71,6 +70,7 @@ function updateCal(date) {
 //Initialize the calendar with the current date first
 updateCal(currDate);
 
+//Create event listeners for buttons that update the calendar
 next.addEventListener('click', function() {
     trackerDateCurr = new Date(trackerDateSwap.getFullYear(), trackerDateSwap.getMonth() + 1);
     updateCal(trackerDateCurr);

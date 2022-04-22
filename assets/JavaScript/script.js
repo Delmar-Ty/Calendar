@@ -87,4 +87,6 @@ prev.addEventListener('click', function() {
 //Go back to the current date
 backToCurr.addEventListener('click', function() {
     updateCal(currDate);
+    trackerDateCurr = currDate;
+    trackerDateSwap = currDate;
 });

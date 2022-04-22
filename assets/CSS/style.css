@@ -261,3 +261,7 @@ body {
     border-radius: 50%;
     color: black;
 }
+
+.not-month {
+    opacity: 0.5;
+}

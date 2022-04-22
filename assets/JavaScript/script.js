@@ -20,6 +20,7 @@ const title = document.querySelector('.title');
 const monthDays = document.querySelector('.month');
 const next = document.querySelector('.arrow-right');
 const prev = document.querySelector('.arrow-left');
+const backToCurr = document.querySelector('.current-date');
 
 //Function that takes a date as a parameter to update the calendar
 function updateCal(date) {
@@ -81,4 +82,9 @@ prev.addEventListener('click', function() {
     trackerDateCurr = new Date(trackerDateSwap.getFullYear(), trackerDateSwap.getMonth() - 1);
     updateCal(trackerDateCurr);
     trackerDateSwap = trackerDateCurr;
+});
+
+//Go back to the current date
+backToCurr.addEventListener('click', function() {
+    updateCal(currDate);
 });
